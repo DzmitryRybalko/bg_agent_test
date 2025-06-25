@@ -1,0 +1,100 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# User Directory Application - Cursor Rules
+
+## Tech Stack
+- React 18 with TypeScript
+- Vite for build tooling
+- CSS Modules for styling
+- Vitest for testing
+- React Testing Library for component tests
+
+## Code Style & Conventions
+
+### TypeScript
+- Use strict TypeScript configuration
+- Define interfaces for all data structures
+- Use proper typing for props and state
+- Avoid `any` type, use proper typing instead
+- Export interfaces and types from dedicated files
+
+### React Components
+- Use functional components with hooks
+- Use PascalCase for component names
+- Define component props interfaces explicitly
+- Use React.FC type for functional components
+- Implement proper error boundaries and loading states
+
+### CSS Modules
+- Use CSS Modules for component styling
+- Follow BEM-like naming convention for CSS classes
+- Use kebab-case for CSS class names
+- Implement responsive design with mobile-first approach
+- Use CSS custom properties for theming
+
+### File Organization
+- Group related files in feature-based folders
+- Components should have their own folder with:
+  - Component.tsx
+  - Component.module.css
+  - Component.test.tsx
+- Use barrel exports (index.ts) for cleaner imports
+- Keep services and utilities in separate folders
+
+### Testing
+- Write unit tests for all components
+- Use React Testing Library best practices
+- Test user interactions and component behavior
+- Maintain good test coverage
+- Mock external dependencies properly
+
+### API Integration
+- Use proper error handling for API calls
+- Implement loading states for async operations
+- Type API responses properly
+- Use service layer for API abstraction
+
+### Performance
+- Use React.memo() for expensive components
+- Implement proper key props for lists
+- Avoid unnecessary re-renders
+- Optimize images and assets
+
+### Accessibility
+- Use semantic HTML elements
+- Implement proper ARIA labels
+- Ensure keyboard navigation support
+- Maintain good color contrast
+- Provide meaningful alt text for images
+
+### Git & Development
+- Use conventional commit messages
+- Keep commits small and focused
+- Write descriptive pull request descriptions
+- Run tests before committing
+- Use TypeScript strict mode
+
+## Command Examples
+```bash
+# Development
+npm run dev
+
+# Testing
+npm run test
+npm run test:coverage
+
+# Building
+npm run build
+npm run preview
+```
+
+## Best Practices
+- Keep components small and focused
+- Use custom hooks for complex logic
+- Implement proper error boundaries
+- Use environment variables for configuration
+- Follow React Query patterns for data fetching
+- Implement proper loading and error states 
